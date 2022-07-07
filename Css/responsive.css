@@ -1,0 +1,422 @@
+@media (max-width: 1024px) {
+  /*Start 1024px style Hero*/
+  hero {
+    background-position: 450px 10px;
+  }
+
+  .social-menu {
+    margin-top: 15rem;
+    margin-left: 13rem;
+  }
+
+  .arrow {
+    margin-top: 8rem;
+    margin-left: 12rem;
+  }
+
+  .arrow a:first-of-type {
+    padding-right: 30px;
+  }
+  /*End 1024px style Hero*/
+
+  /*Tour style 750px*/
+  .date-Tour {
+    display: block;
+    font-size: 15px;
+  }
+  /*End tour style*/
+
+  /*Store Style 1200px*/
+
+  .galery-store img {
+    height: 200px;
+  }
+
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+}
+
+@media (max-width: 900px) {
+  /*Start 900px style Hero*/
+  hero {
+    background-position: 450px 10px;
+  }
+
+  .social-menu {
+    margin-top: 1rem;
+    margin-left: 9rem;
+  }
+
+  .social-menu a {
+    font-size: 1.3rem;
+  }
+  .arrow {
+    margin: 2rem 0 0 8.3rem;
+  }
+  .arrow a:first-of-type {
+    padding-right: 25px;
+  }
+
+  /*End 900px style Hero*/
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+  /*nav responsive*/
+  #btn-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    right: 0px;
+    background: #f7c528;
+    z-index: 1000;
+    height: calc(100vh-70px);
+  }
+
+  #nav.active #menu {
+    display: block;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0px 1rem;
+    border-bottom: 2px solid #b78d00;
+    transition: ease 0.5s;
+  }
+
+  #menu a:hover {
+    transform: scale(1.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    color: rgb(0, 0, 0);
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #hamburger.active {
+    display: none;
+  }
+
+  /*nav responsive end*/
+
+  hero {
+    background-image: none;
+  }
+
+  hero .title {
+    grid-column: 1;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .social-menu ul li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  /*Store Style 900px*/
+
+  .galery-store img {
+    height: 150px;
+  }
+
+  /*End Store Style 900px*/
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 770px) {
+  hero {
+    display: block;
+    padding: auto;
+  }
+
+  hero .title {
+    padding: 0;
+    margin: 1rem;
+  }
+  .social-menu {
+    margin: 0;
+  }
+  .social-menu > ul {
+    padding-left: 1rem;
+  }
+
+  .arrow {
+    margin-left: 1rem;
+  }
+
+  .releases__grid {
+    --num-cols: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title-wf {
+    font-size: 3.7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.493);
+    color: rgba(0, 0, 0, 0);
+    font-family: var(--sen);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+  }
+  .btn--b {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+    margin-right: 1rem;
+  }
+
+  .btn--y {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+    margin-right: 1rem;
+  }
+
+  .left {
+    margin-left: 0;
+  }
+
+  /*Tour style 750px*/
+  .date-Tour s1,
+  .date-Tour s2,
+  .date-Tour s3,
+  .date-Tour s4,
+  .date-Tour s5,
+  .date-Tour s6 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+      "s11 s33 s33"
+      "s22 s22 s22"
+      "s44 s55 s66";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .s11 {
+    grid-area: s11;
+    font-size: 20px;
+    margin-left: 20%;
+  }
+
+  .s22 {
+    grid-area: s22;
+    font-size: 30px;
+    margin-left: 5%;
+  }
+
+  .s33 {
+    grid-area: s33;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .s44 {
+    grid-area: s44;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  .s55 {
+    grid-area: s55;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  .s66 {
+    grid-area: s66;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+  /*End tour style*/
+
+  /*Store Style 700px*/
+
+  .title-wf .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+
+  .galery-store {
+    display: block;
+  }
+
+  .galery-store h3 {
+    display: block;
+    font-size: 1 em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .galery-store img {
+    height: 250px;
+  }
+
+  div .store__card {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*End Store Style 700px*/
+
+  /*Start Photo CSS*/
+
+  /*End Photo CSS*/
+
+  .title-wf__subscribe {
+    font-size: 3.7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.493);
+    color: rgba(0, 0, 0, 0);
+    font-family: var(--sen);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+  }
+  footer {
+    height: auto;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .photos {
+    padding-bottom: 1rem;
+  }
+
+  .subscribe {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 435px) {
+  hero {
+    display: block;
+    padding: auto;
+  }
+
+  hero .title {
+    padding: 0;
+    margin: 1rem;
+  }
+  .social-menu {
+    margin: 0;
+  }
+  .social-menu > ul {
+    padding-left: 1rem;
+  }
+
+  .arrow {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+  .releases__grid {
+    --num-cols: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title-wf {
+    font-size: 2rem;
+  }
+
+  .btn--b {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+  }
+
+  .btn--y {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+  }
+
+  /*Hero css style 375px*/
+  .hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: -3rem;
+    font-family: var(--sedwick);
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+    font-family: var(--sen);
+    line-height: 2rem;
+    margin-bottom: -0.1rem;
+    font-weight: 800;
+  }
+
+  /*Tour style 375px*/
+
+  /*End tour style*/
+
+  /*Store Style 375px*/
+  .galery-store {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .galery-store img {
+    height: 200px;
+  }
+
+  .title-wf__subscribe {
+    font-size: 2rem;
+  }
+  /*End Store Style 375px*/
+
+  footer {
+    height: auto;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+}
